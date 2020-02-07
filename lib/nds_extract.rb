@@ -37,14 +37,14 @@ def movies_with_director_key(name, movies_collection)
  require 'pp'
  i = 0
  results_array = []
- director_name = name
- movie_data = movies_collection[i]
  pp director_name
  pp movie_data
   while i < movies_collection.length
+ movie_data = movies_collection[i]
+ director_name = name
    # movies_collection[i][:director_name] = "#{name}"
   movie_with_director_name(name, movies_collection)
-  
+  results_array.push()
     i += 1
   end
   

@@ -40,7 +40,7 @@ def movies_with_director_key(name, movies_collection)
 
   while i < movies_collection.length
   
-  movies_collection[i][:director_name] = "#{name}"
+  movies_collection[i][:director_name] = name
 
   results_array.push(movies_collection[i])
     i += 1

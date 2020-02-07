@@ -56,8 +56,8 @@ def gross_per_studio(collection)
   studio = {}
   studio_profit = 0
   while i < collection.length do
-    studio_name = source[i][:studio]
-    profit = source[i][:worldwide_gross]
+    studio_name = collection[i][:studio]
+    profit = collection[i][:worldwide_gross]
     studio_profit += profit
     
     studio[studio_name] = studio_profit

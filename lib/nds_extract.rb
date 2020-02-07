@@ -36,7 +36,7 @@ end
 def movies_with_director_key(name, movies_collection)
  require 'pp'
  i = 0
- director_name = name[i]
+ director_name = name
  movie_data = movies_collection[i]
  pp director_name
  pp movie_data

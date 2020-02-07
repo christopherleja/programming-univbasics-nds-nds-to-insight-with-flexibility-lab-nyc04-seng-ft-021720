@@ -92,7 +92,7 @@ def movies_with_directors_set(source)
 
   i = 0
   director_catalogue_array = []
-  pp source
+  pp source.length
   #while i < source.length do
  
   

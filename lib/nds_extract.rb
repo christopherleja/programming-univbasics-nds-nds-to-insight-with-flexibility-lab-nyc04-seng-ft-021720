@@ -1,5 +1,6 @@
 # Provided, don't edit
 require 'directors_database'
+require 'pp'
 
 # A method we're giving you. This "flattens"  Arrays of Arrays so: [[1,2],
 # [3,4,5], [6]] => [1,2,3,4,5,6].
@@ -34,7 +35,7 @@ end
 # Your code after this point
 
 def movies_with_director_key(name, movies_collection)
- require 'pp'
+
  i = 0
  results_array = []
 
@@ -50,7 +51,7 @@ end
 
 
 def gross_per_studio(collection)
-  require 'pp'
+  
   i = 0
   studio_name = []
   studio = {}
@@ -88,24 +89,16 @@ def gross_per_studio(collection)
 end
 
 def movies_with_directors_set(source)
-  require 'pp'
-  i = 0
 
-  movie_director_array = []
+  i = 0
+  director_catalogue_array = []
+  pp source
+  #while i < source.length do
+ 
   
-  #pp source[0][:movies][i]
-  while i < source.length do
-    movies = source[i][:movies]
-    name = source[i][:name]
-    director_name = [name, movies]
-   # movies_with_director_names(name, movies)
-   if movie_director_array.length < 9
-    movie_director_array.push(director_name)
-  else
-  end
-      i += 1
+    #  i += 1
       
-  end
+ # end
  # pp movie_director_array
   movie_director_array
  # movie_director_array

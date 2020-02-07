@@ -69,7 +69,6 @@ def gross_per_studio(collection)
       end
     i += 1
   end
-pp studio
 studio
   
   # GOAL: Given an Array of Hashes where each Hash represents a movie,

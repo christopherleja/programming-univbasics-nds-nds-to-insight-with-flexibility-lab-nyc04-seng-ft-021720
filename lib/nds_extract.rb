@@ -38,6 +38,8 @@ def movies_with_director_key(name, movies_collection)
  i = 0
  director_name = name[i]
  movie_data = movies_collection[i]
+ pp director_name
+ pp movie_data
   while i < movies_collection.length
    # movies_collection[i][:director_name] = "#{name}"
   pp movie_with_director_name(name, movies_collection)

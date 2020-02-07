@@ -56,7 +56,7 @@ def gross_per_studio(collection)
   studio = {}
   studio_profit = 0
   #pp collection
-  while i < collection[:director_name].length do
+  while i < collection.length do
     studio_name = collection[i][:studio]
     profit = collection[i][:worldwide_gross]
       

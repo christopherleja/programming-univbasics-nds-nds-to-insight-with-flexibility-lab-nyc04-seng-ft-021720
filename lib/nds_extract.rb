@@ -65,6 +65,7 @@ def gross_per_studio(collection)
       
       else
         studio[studio_name] += studio_profit
+      end
     i += 1
   end
   pp studio

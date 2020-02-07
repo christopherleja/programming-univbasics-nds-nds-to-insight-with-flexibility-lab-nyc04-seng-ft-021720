@@ -55,7 +55,6 @@ def gross_per_studio(collection)
   studio_name = []
   studio = {}
   studio_profit = 0
-  #pp collection[i][:studio]
   while i < collection.length do
     n = 0
   studio_name = collection[i][:studio]

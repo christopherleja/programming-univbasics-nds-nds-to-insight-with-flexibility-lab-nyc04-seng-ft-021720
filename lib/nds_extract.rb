@@ -68,7 +68,6 @@ def gross_per_studio(collection)
         studio[studio_name] = profit
       end
     i += 1
-  break
   end
 studio
   

@@ -55,6 +55,7 @@ def gross_per_studio(collection)
 
   studio = {}
   studio_profit = 0
+  pp collection
   while i < collection.length do
     studio_name = collection[i][:studio]
     profit = collection[i][:worldwide_gross]
@@ -68,7 +69,7 @@ def gross_per_studio(collection)
       end
     i += 1
   end
-  pp studio
+ # pp studio
   studio
   
   # GOAL: Given an Array of Hashes where each Hash represents a movie,

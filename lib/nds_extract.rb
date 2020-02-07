@@ -37,8 +37,8 @@ def movies_with_director_key(name, movies_collection)
  require 'pp'
  i = 0
  results_array = []
- pp director_name
- pp movie_data
+ #pp director_name
+ #pp movie_data
   while i < movies_collection.length
  movie_data = movies_collection[i]
  director_name = name

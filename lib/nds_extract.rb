@@ -40,10 +40,9 @@ def movies_with_director_key(name, movies_collection)
  results_array = []
 
   while i < movies_collection.length
+    movies_collection[i][:director_name] = name
   
-  movies_collection[i][:director_name] = name
-
-  results_array.push(movies_collection[i])
+    results_array.push(movies_collection[i])
     i += 1
   end
   results_array
@@ -92,9 +91,11 @@ def movies_with_directors_set(source)
 
   i = 0
   director_catalogue_array = []
-  pp source.length
-  #while i < source.length do
- 
+  
+  while i < source.length do
+    name = source[i][:name]
+    pp name
+    #movies_with_director_key()
   
     #  i += 1
       

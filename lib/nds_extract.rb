@@ -46,7 +46,6 @@ def movies_with_director_key(name, movies_collection)
   results_array.push(movies_collection[i])
     i += 1
   end
-  pp results_array
   results_array
   # GOAL: For each Hash in an Array (movies_collection), provide a collection
   # of movies and a directors name to the movie_with_director_name method

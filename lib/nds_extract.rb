@@ -43,8 +43,8 @@ def movies_with_director_key(name, movies_collection)
  movies_collection = movie_data
  name = director_name
    # movies_collection[i][:director_name] = "#{name}"
-  #movie_with_director_name(name, movies_collection)
-  results_array.push(movie_with_director_name(name, movies_collection))
+  stuff_i_need = movie_with_director_name(name, movies_collection)
+  results_array.push(stuff_i_need)
     i += 1
   end
   pp results_array

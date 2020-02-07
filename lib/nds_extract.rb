@@ -40,7 +40,7 @@ def movies_with_director_key(name, movies_collection)
  movie_data = movies_collection[i]
   while i < movies_collection.length
    # movies_collection[i][:director_name] = "#{name}"
-  movie_with_director_name(name[i], movies_collection[i])
+  pp movie_with_director_name(name, movies_collection)
     i += 1
   end
   

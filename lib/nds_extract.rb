@@ -58,7 +58,7 @@ def gross_per_studio(collection)
   while i < collection.length do
     studio_name = collection[i][:studio]
     profit = collection[i][:worldwide_gross]
-    studio_profit += profit
+  #  studio_profit += profit
       
       if studio.include?(studio_name)
       studio[studio_name] += studio_profit

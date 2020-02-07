@@ -94,15 +94,16 @@ def movies_with_directors_set(source)
   
   while i < source.length do
     name = source[i][:name]
-    pp name
-    #movies_with_director_key()
+    movies_collection = source[i][:movies]
+    director_catalogue = movies_with_director_key(name, movies_collection)
   
+      director_catalogue_array.push(director_catalogue)
       i += 1
       
   end
- # pp movie_director_array
-  movie_director_array
- # movie_director_array
+ pp director_catalogue_array
+ director_catalogue_array
+ 
   # GOAL: For each director, find their :movies Array and stick it in a new Array
   #
   # INPUT:

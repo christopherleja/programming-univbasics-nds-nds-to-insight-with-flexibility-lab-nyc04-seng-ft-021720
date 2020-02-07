@@ -60,15 +60,15 @@ def gross_per_studio(collection)
     profit = collection[i][:worldwide_gross]
     studio_profit += profit
       
-      if !studio[studio_name]
-      studio[studio_name] = studio_profit
+      if studio[studio_name]
+      studio[studio_name] += studio_profit
       
       else
-        #studio[studio_name] += studio_profit
+        studio[studio_name] = studio_profit
       end
     i += 1
   end
-  pp studio[studio_name]
+  pp studio
   studio
   
   # GOAL: Given an Array of Hashes where each Hash represents a movie,

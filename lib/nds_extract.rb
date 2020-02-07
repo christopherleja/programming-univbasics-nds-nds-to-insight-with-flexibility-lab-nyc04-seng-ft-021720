@@ -40,11 +40,11 @@ def movies_with_director_key(name, movies_collection)
  #pp director_name
  #pp movie_data
   while i < movies_collection.length
- movie_data = movies_collection[i]
- director_name = name
+ movies_collection = movie_data
+ name = director_name
    # movies_collection[i][:director_name] = "#{name}"
-  movie_with_director_name(name, movies_collection)
-  results_array.push()
+  #movie_with_director_name(name, movies_collection)
+  results_array.push(movie_with_director_name(name, movies_collection))
     i += 1
   end
   

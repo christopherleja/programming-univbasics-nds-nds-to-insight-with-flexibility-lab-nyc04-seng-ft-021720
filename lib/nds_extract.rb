@@ -65,10 +65,10 @@ def gross_per_studio(collection)
       
       else
         studio[studio_name] = studio_profit
+  pp studio_name
       end
     i += 1
   end
-  pp studio_name
   studio
   
   # GOAL: Given an Array of Hashes where each Hash represents a movie,

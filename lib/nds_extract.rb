@@ -58,13 +58,13 @@ def gross_per_studio(collection)
   while i < collection.length do
     studio_name = collection[i][:studio]
     profit = collection[i][:worldwide_gross]
-    #studio_profit += profit
+    studio_profit += profit
       
       if !studio[studio_name]
       studio[studio_name] = studio_profit
       
       else
-        studio[studio_name] += studio_profit
+        #studio[studio_name] += studio_profit
       end
     i += 1
   end

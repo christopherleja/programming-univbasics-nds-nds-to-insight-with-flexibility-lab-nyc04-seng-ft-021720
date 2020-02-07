@@ -52,20 +52,12 @@ end
 def gross_per_studio(collection)
   
   i = 0
-  studio_name = []
+
   studio = {}
   studio_profit = 0
   while i < collection.length do
-    n = 0
-  studio_name = collection[i][:studio]
-  studio_profit += collection[i][:worldwide_gross]
-  
-   while n < collection[i][:studio].length
-      studio[studio_name[n]] = studio_profit[i]
-    n += 1
-  end
-    i += 1
     
+    i += 1
   end
   
   studio
